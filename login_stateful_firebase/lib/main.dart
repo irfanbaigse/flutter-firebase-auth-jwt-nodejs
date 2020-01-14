@@ -18,6 +18,7 @@ class _MyAppState extends State<MyApp> {
     return StreamProvider<User>.value(
       value: AuthService().user$,
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Flutter Firebase Jwt Demo',
         home: Wrapper(),
       ),
